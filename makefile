@@ -220,13 +220,13 @@ OS := freebsd
 GENIEOS := bsd
 else ifeq ($(firstword $(filter GNU/kFreeBSD,$(UNAME))),GNU/kFreeBSD)
 OS := freebsd
-GENIEOS := freebsd
+GENIEOS := bsd
 else ifeq ($(firstword $(filter NetBSD,$(UNAME))),NetBSD)
 OS := netbsd
-GENIEOS := freebsd
+GENIEOS := bsd
 else ifeq ($(firstword $(filter OpenBSD,$(UNAME))),OpenBSD)
 OS := openbsd
-GENIEOS := freebsd
+GENIEOS := bsd
 else ifeq ($(firstword $(filter Darwin,$(UNAME))),Darwin)
 OS := macosx
 GENIEOS := darwin
